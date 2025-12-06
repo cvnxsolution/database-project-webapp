@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Set;
+
 @Entity
 @Table(name = "students")
 @Data
@@ -14,4 +16,22 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
+    @ManyToOne
+    @JoinColumn(name = "role_id")
+    private Role role;
+
+    @OneToMany(mappedBy = "student")
+    private Set<Review> reviews;
+
+    @OneToMany(mappedBy = "student")
+    private Set<Answer> answers;
+
+    @ManyToMany
+    @JoinTable(
+            name = "badges_students",
+            joinColumns = @JoinColumn(name = "student_id"),
+            inverseJoinColumns = @JoinColumn(name = "badge_id")
+    )
+    private Set<Badge> badges;
 }

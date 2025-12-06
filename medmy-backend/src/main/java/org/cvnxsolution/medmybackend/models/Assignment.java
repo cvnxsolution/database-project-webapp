@@ -8,6 +8,7 @@ import org.cvnxsolution.medmybackend.utils.AssignmentStatus;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Set;
 
 @Entity
 @Table(name = "assignments")
@@ -30,6 +31,9 @@ public class Assignment {
     private LocalDateTime expireDate;
 
     private AssignmentStatus status;
+
+    @OneToMany(mappedBy = "assignment")
+    private Set<Answer> answers;
 
 
 }

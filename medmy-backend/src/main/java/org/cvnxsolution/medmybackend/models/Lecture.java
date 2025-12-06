@@ -15,4 +15,8 @@ public class Lecture {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private String id;
     private String videoUrl;
+
+    @ManyToOne
+    @JoinColumn(name = "section_id")
+    private Section section;
 }

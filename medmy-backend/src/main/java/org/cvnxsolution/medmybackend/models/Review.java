@@ -19,4 +19,12 @@ public class Review {
 
     private String comment;
 
+    @ManyToOne
+    @JoinColumn(name = "course_id")
+    private Course course;
+
+    @ManyToOne
+    @JoinColumn(name = "student_id")
+    private Student student;
+
 }

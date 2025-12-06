@@ -16,7 +16,17 @@ public class Answer {
     private Long id;
 
     private String title;
+
     private String subject;
 
     private String fileUrl;
+
+    @ManyToOne
+    @JoinColumn(name = "assignment_id")
+    private Assignment assignment;
+
+    @ManyToOne
+    @JoinColumn(name = "student_id")
+    private Student student;
+
 }

@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Set;
+
 @Entity
 @Table(name = "sections")
 @Data
@@ -18,5 +20,12 @@ public class Section {
     private byte sectionNumber;
 
     private String sectionTitle;
+
+    @ManyToOne
+    @JoinColumn(name = "course_id")
+    private Course course;
+
+    @OneToMany(mappedBy = "section")
+    private Set<Lecture> lectures;
 
 }

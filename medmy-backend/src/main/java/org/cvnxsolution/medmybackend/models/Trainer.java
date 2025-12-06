@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Set;
+
 @Entity
 @Table(name = "trainers")
 @Data
@@ -18,4 +20,12 @@ public class Trainer {
     private String bio;
     private String detailedProfile;
     private String profileImageUrl;
+
+    @ManyToOne
+    @JoinColumn(name = "role_id")
+    private Role role;
+
+    @ManyToMany(mappedBy = "trainers")
+    private Set<Course> courses;
+
 }

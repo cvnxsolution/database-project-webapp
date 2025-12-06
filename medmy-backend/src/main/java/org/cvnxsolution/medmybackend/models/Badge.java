@@ -5,8 +5,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Set;
+
 @Entity
-@Table(name = "achivements")
+@Table(name = "badges")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -18,4 +20,7 @@ public class Badge {
     private String name;
 
     private String imageUrl;
+
+    @ManyToMany(mappedBy = "badges")
+    private Set<Student> students;
 }

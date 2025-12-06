@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Set;
+
 @Entity
 @Table(name = "categories")
 @Data
@@ -16,4 +18,7 @@ public class Category {
     private Long id;
 
     private String name;
+
+    @ManyToMany(mappedBy = "categories")
+    private Set<Course> courses;
 }
