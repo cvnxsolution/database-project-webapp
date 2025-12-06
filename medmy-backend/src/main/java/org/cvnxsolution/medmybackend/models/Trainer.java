@@ -21,9 +21,9 @@ public class Trainer {
     private String detailedProfile;
     private String profileImageUrl;
 
-    @ManyToOne
-    @JoinColumn(name = "role_id")
-    private Role role;
+    @OneToOne(cascade =  CascadeType.ALL)
+    @JoinColumn(name = "user_id")
+    private User user;
 
     @ManyToMany(mappedBy = "trainers")
     private Set<Course> courses;
