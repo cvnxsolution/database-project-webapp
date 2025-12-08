@@ -17,6 +17,12 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    private String name;
+
+    private String slug;
+
+    private String profileImageUrl;
+
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id")
     private User user;
@@ -34,4 +40,13 @@ public class Student {
             inverseJoinColumns = @JoinColumn(name = "badge_id")
     )
     private Set<Badge> badges;
+
+    @OneToMany(mappedBy = "student")
+    private Set<Purchase> purchases;
+
+    @OneToMany(mappedBy = "student")
+    private Set<Certificate> certificates;
+
+
+
 }

@@ -4,33 +4,40 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.context.annotation.EnableMBeanExport;
+
+import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "answers")
+@Table(name = "certificates")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Answer {
+public class Certificate {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
     private String title;
-
-    private String subject;
-
+    private String description;
     private String fileUrl;
+    private LocalDateTime issueDate;
 
-    private byte score;
 
-    private String feedback;
+    private Boolean hasExpireDate;
 
-    @ManyToOne
-    @JoinColumn(name = "assignment_id")
-    private Assignment assignment;
+    @Column(nullable = true)
+    private LocalDateTime expiresAt;
+    private Boolean isExpired;
+
 
     @ManyToOne
     @JoinColumn(name = "student_id")
     private Student student;
+
+    @OneToOne
+    @JoinColumn(name = "course_id")
+    private Course course;
+
+
 
 }
