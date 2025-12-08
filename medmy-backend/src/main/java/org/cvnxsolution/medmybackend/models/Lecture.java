@@ -14,7 +14,23 @@ public class Lecture {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private String id;
+
+    private String title;
+
+    @Column(nullable = false, unique = true)
+    private String slug;
+
+    private String description;
+
     private String videoUrl;
+
+    private Integer durationSeconds;
+
+    private String VideoFormat;
+
+    private Double fileSizeMb;
+
+    private Boolean isPreviewAvailable;
 
     @ManyToOne
     @JoinColumn(name = "section_id")

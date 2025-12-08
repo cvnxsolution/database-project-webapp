@@ -17,6 +17,11 @@ public class Course {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    private String title;
+
+    @Column(nullable = false, unique = true)
+    private String slug;
+
     private String description;
 
     private String coverImageUrl;
@@ -43,5 +48,13 @@ public class Course {
             inverseJoinColumns = @JoinColumn(name = "category_id")
     )
     private Set<Category> categories;
+
+    @OneToMany(mappedBy = "course")
+    private Set<Purchase> purchases;
+
+    @OneToOne(mappedBy = "course")
+    private Certificate certificate;
+
+
 
 }

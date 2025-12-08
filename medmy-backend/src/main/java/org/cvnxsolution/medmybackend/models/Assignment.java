@@ -32,8 +32,14 @@ public class Assignment {
 
     private AssignmentStatus status;
 
+    private byte maxScore;
+
     @OneToMany(mappedBy = "assignment")
     private Set<Answer> answers;
+
+    @ManyToOne
+    @JoinColumn(name = "lecture_id")
+    private Lecture lecture;
 
 
 }
