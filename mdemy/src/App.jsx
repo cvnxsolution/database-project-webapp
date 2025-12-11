@@ -1,11 +1,16 @@
 import React from 'react'
 import Navbar from './components/navbar'
+import { BrowserRouter, Routes ,Route} from 'react-router-dom'
+import Courses from './components/Courses'
 
 const App = () => {
   return (
-    <main>
+    <BrowserRouter>
       <Navbar/>
-    </main>
+      <Routes>
+        <Route path='/courses' element={<Courses/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

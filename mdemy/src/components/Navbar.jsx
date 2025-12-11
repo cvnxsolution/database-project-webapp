@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaSearch,FaShoppingCart,FaGlobe } from 'react-icons/fa'
 import { LuChevronUp } from "react-icons/lu";
+import { Navigate } from 'react-router-dom';
 
 const Navbar = () => {
+  const [keyword,setKeyword] = useState('')
+  const navigate = Navigate()
+
+  const handleIconClick = () => {
+    navigate(`/courses?keyword=`)
+  }
+
   return (
     <nav className='navbar'>
     
@@ -13,8 +21,13 @@ const Navbar = () => {
           </div>
     
           <div className='nav-search'>
-            <input type="text" placeholder='Search for anything'/>
-            <FaSearch className='search-icon'/>
+            <input 
+              type="text" 
+              placeholder='Search for anything'
+              value={keyboard}
+              onChange={(e)=>setKeyboard(e.target.value)}
+            />
+            <FaSearch className='search-icon' onClick={handleIconClick}/>
           </div>
     
           <div className='nav-right'>
