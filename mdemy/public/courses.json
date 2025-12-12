@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "The Ultimate React Course 2025: React, Next.js, Redux & More",
+    "slug": "ultimate-react-course-2025",
+    "description": "Master modern React from beginner to advanced. Build real projects using React, Next.js, Redux Toolkit, Context API, and more.",
+    "coverImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe1fd-o3TUEb572k_EMh3FFpP95yQcEoLzMA&s",
+    "rating": 4.5,
+    "language": null,
+    "previewVideoUrl": null,
+    "durationMinutes": null,
+    "courseLevel": null
+  },
+  {
+    "id": 2,
+    "title": "The Complete JavaScript Course 2025: From Zero to Expert!",
+    "slug": "complete-javascript-course-2025",
+    "description": "Become a JavaScript expert with hands-on projects, DOM manipulation, ES6+, and modern JavaScript features.",
+    "coverImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtSjtynhlJLcf-snjNi9wi5tmQ_ZNZBnqObQ&s",
+    "rating": 3.5,
+    "language": null,
+    "previewVideoUrl": null,
+    "durationMinutes": null,
+    "courseLevel": null
+  },
+  {
+    "id": 3,
+    "title": "100 Days of Code™: The Complete Python Pro Bootcamp",
+    "slug": "100-days-of-code-python-bootcamp",
+    "description":"Learn Python step-by-step with 100 real projects. Web development, automation, data science, APIs & more.",
+    "coverImageUrl": "https://img-c.udemycdn.com/course/750x422/2314160_8d61_6.jpg",
+    "rating": 4.5,
+    "language": null,
+    "previewVideoUrl": null,
+    "durationMinutes": null,
+    "courseLevel": null
+  },
+  {
+    "id": 4,
+    "title": "The Complete Python Bootcamp From Zero to Hero in Python",
+    "slug": "complete-python-bootcamp",
+    "description":  "Learn Python from scratch with clear explanations, coding exercises, and quizzes.",
+    "coverImageUrl": "https://cdn.shopaccino.com/igmguru/products/python-training--igmguru-64626207279351_m.jpg?v=531",
+    "rating": 5.0,
+    "language": null,
+    "previewVideoUrl": null,
+    "durationMinutes": null,
+    "courseLevel": null
+  },
+  {
+    "id": 5,
+    "title": "The Complete Python Bootcamp From Zero to Hero in Python",
+    "slug":  "react-complete-guide-2025",
+    "description":"Learn React from the ground up — Hooks, Components, Redux, Next.js, and advanced patterns.",
+    "coverImageUrl": "https://cdn.shopaccino.com/igmguru/products/python-training--igmguru-64626207279351_m.jpg?v=531",
+    "rating": 3.6,
+    "language": null,
+    "previewVideoUrl": null,
+    "durationMinutes": null,
+    "courseLevel": null
+  },
+  {
+    "id": 6,
+    "title": "React - The Complete Guide 2025 (incl. Next.js, Redux)",
+    "slug":  "react-typescript-practical-guide",
+    "description": "Build scalable React apps using TypeScript. Learn types, generics, components, props & API integration.",
+    "coverImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsVZbglsv53rS4z15Hu2F1DS4FqWOIhD2LNA&s",
+    "rating": 2.7,
+    "language": null,
+    "previewVideoUrl": null,
+    "durationMinutes": null,
+    "courseLevel": null
+  },
+  {
+    "id": 7,
+    "title": "React & TypeScript - The Practical Guide",
+    "slug":  "react-typescript-the-practical-guide",
+    "description":  "A fast-track JavaScript course for beginners. Learn variables, functions, DOM, and async programming.",
+    "coverImageUrl": "https://uploads.teachablecdn.com/attachments/SWtZL7dtR3SYRScauf7w_+1920x1357.jpg",
+    "rating": 4.5,
+    "language": null,
+    "previewVideoUrl": null,
+    "durationMinutes": null,
+    "courseLevel": null
+  },
+  {
+    "id": 8,
+    "title": "JavaScript - The Complete Guide 2025 (Beginner + Advanced)",
+    "slug": "javascript-complete-guide-2025",
+    "description": "JavaScript is a programming language used to make websites interactive and dynamic.",
+    "coverImageUrl": "https://img-c.udemycdn.com/course/750x422/851712_fc61_6.jpg",
+    "rating": 2.7,
+    "language": null,
+    "previewVideoUrl": null,
+    "durationMinutes": null,
+    "courseLevel": null
+  },
+  {
+    "id": 9,
+    "title": "Learn JavaScript in 2 Weeks (Complete JavaScript Bootcamp)",
+    "slug": "learn-javascript-in-2-weeks-bootcamp",
+    "description": "Learn modern ES6+, DOM manipulation, asynchronous programming, OOP, functional patterns, modules, and advanced concepts through hands-on projects and real-world challenges.",
+    "coverImageUrl": "https://i.ytimg.com/vi/jS4aFq5-91M/maxresdefault.jpg",
+    "rating": 4.1,
+    "language": null,
+    "previewVideoUrl": null,
+    "durationMinutes": null,
+    "courseLevel": null
+  }
+]

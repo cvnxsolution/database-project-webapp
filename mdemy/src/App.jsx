@@ -1,17 +1,17 @@
-import React from 'react'
-import Navbar from './components/navbar'
-import { BrowserRouter, Routes ,Route} from 'react-router-dom'
-import Courses from './components/Courses'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Courses from "./components/Courses";
 
-const App = () => {
+function App() {
   return (
     <BrowserRouter>
-      <Navbar/>
+      <Navbar />   
+      
       <Routes>
-        <Route path='/courses' element={<Courses/>}/>
+        <Route path="/courses" element={<Courses />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
