@@ -1,6 +1,24 @@
-import React from 'react'
+export const footerImage = [
+    {
+        id:1,
+        image:"https://s.udemycdn.com/partner-logos/v4/nasdaq-light.svg"
+    },
+    {
+        id:2,
+        image:"https://s.udemycdn.com/partner-logos/v4/volkswagen-light.svg"
+    },
+    {
+        id:3,
+        image:"https://s.udemycdn.com/partner-logos/v4/netapp-light.svg"
+    },
+    {
+        id:4,
+        image:"https://s.udemycdn.com/partner-logos/v4/eventbrite-light.svg"
+    }
+]
 
-const footerData = [
+
+export const footerData = [
     {
         title:"In-demand Careers",
         items:[
@@ -73,5 +91,40 @@ const footerData = [
     }
 ]
 
+export const footerItem=[
+    {
+        title:"About",
+        data:[
+            "About us",
+            "Careers",
+            "Contact us",
+            "Blog",
+            "Investors"
+        ]
+    },
+    {
+        title:"Discover Mdemy",
+        data:[
+            "Get the app",
+            "Teach on Mdemy",
+            "Plans and Pricing",
+            "Affiliate",
+            "Help and Support"
+        ]
+    },
+    {
+        title:"Mdemy for Business",
+        data:["Mdemy Business"]
+    },
+    {
+        title:"Legal & Accessibility",
+        data:[
+            "Accessibility statement",
+            "Privacy policy",
+            "Sitemap",
+            "Terms"
+        ]
+    }
+]
 
-export default footerData
+
