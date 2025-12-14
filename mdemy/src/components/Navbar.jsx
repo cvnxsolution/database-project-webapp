@@ -5,47 +5,50 @@ import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [keyword, setKeyword] = useState("");
+  const [menuOpen,setMenuOpen] = useState(false)
   const navigate = useNavigate();
 
   const handleSearch = (e) => {
   if (e.key === "Enter") {
     navigate(`/courses?keyword=${encodeURIComponent(keyword)}`);
+    setMenuOpen(false)
   }
-};
-
-const handleIconClick = () => {
-  navigate(`/courses?keyword=${encodeURIComponent(keyword)}`);
 };
 
 
   return (
     <nav className='navbar'>
-        <LuMenu className='menu-icon'/>
-      <div className='nav-left'>
-        <LuChevronUp className='up-icon'/>
-        <div className='logo'>mdemy</div>
-        <a href="#" className='explore'>Explore</a>
-      </div>
+      <div className='navbar-inner'>
 
-      <div className='nav-search'>
-        <input 
-          type="text" 
-          placeholder='Search for anything'
-          value={keyword}
-          onChange={(e)=>setKeyword(e.target.value)}
-          onKeyDown={handleSearch}
-        />
-        <FaSearch className='search-icon' onClick={handleIconClick}/>
-      </div>
+        <div className='nav-left'>
+          <LuMenu 
+            className='menu-icon' 
+            onClick={()=>setMenuOpen(!menuOpen)}
+          />
+          <h1 className='logo'><span>m</span>demy</h1>
+          <a href="#" className='explore'>Explore</a>
+        </div>
 
-      <div className='nav-right'>
-        <a href="#" className='nav-links'>Plans & Pricing</a>
-        <a href="#" className='nav-links'>Mdemy Business</a>
-        <a href="#" className='nav-links'>Teach on Mdemy</a>
-        <FaShoppingCart className='cart-icon'/>
-        <button>Log in</button>
-        <button>Sign up</button>
-        <FaGlobe className='world-icon'/>
+        <div className='nav-search'>
+          <input 
+            type="text" 
+            value={keyword}
+            onChange={(e)=>setKeyword(e.target.value)}
+            onKeyDown={handleSearch}
+          />
+          <FaSearch className='search-icon'/>
+        </div>
+
+        <div className={`nav-right ${menuOpen ? "active" : ""} `}>
+          <a href="#" className='nav-links'>Plans & Pricing</a>
+          <a href="#" className='nav-links'>Mdemy Business</a>
+          <a href="#" className='nav-links tech'>Teach on Mdemy</a>
+          <FaShoppingCart className='cart-icon'/>
+          <button className="login-btn">Log in</button>
+          <button className="signup-btn">Sign up</button>
+          <FaGlobe className='world-icon'/>
+        </div>
+
       </div>
     </nav>
   )

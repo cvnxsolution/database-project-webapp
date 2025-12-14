@@ -1,0 +1,53 @@
+[
+  { 
+    "id": 1, 
+    "title": "AI Agents", 
+    "users": "330K+",
+    "image" :"https://ismg-cdn.nyc3.cdn.digitaloceanspaces.com/articles/ai-agents-are-coming-to-work-are-organizations-equipped-showcase_image-1-a-28023.jpg"
+ },
+  { 
+    "id": 2, 
+    "title": "Data Science", 
+    "users": "8.1M+" ,
+    "image" :"https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGF0YSUyMHNjaWVuY2V8ZW58MHx8MHx8fDA%3D"
+},
+  { 
+    "id": 3, 
+    "title": "IT Certifications", 
+    "users": "14M+" ,
+    "image":"https://img.freepik.com/free-vector/illustrated-online-certification-screen_23-2148579915.jpg?semt=ais_hybrid&w=740&q=80"
+},
+  { 
+    "id": 4, 
+    "title": "Generative AI", 
+    "users": "1.7M+" ,
+    "image":"https://i.pinimg.com/564x/f4/66/c7/f466c7abac01efff5636e2c498c869a4.jpg"
+    
+},
+
+ 
+  { 
+    "id": 5, 
+    "title": "ChatGPT", 
+    "users": "5M+" ,
+    "image" :"https://media.istockphoto.com/id/1304849823/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E9%9D%92%E3%81%84%E8%83%8C%E6%99%AF%E3%81%AB2%E3%81%A4%E3%81%AE%E3%83%90%E3%83%96%E3%83%AB%E3%83%88%E3%83%BC%E3%82%AF%E3%82%84%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E8%A8%98%E5%8F%B7%E8%A8%98%E5%8F%B7.jpg?b=1&s=1024x1024&w=0&k=20&c=wzeuWA_oqNuDLAjLOi2PldR_MSUhAz2IRFW3nfje-_s="
+},
+  { 
+    "id": 6, 
+    "title": "Prompt Engineering", 
+    "users": "730K+" ,
+    "image" :"https://img-c.udemycdn.com/course/750x422/6672955_ab14_4.jpg"
+},
+  { 
+    "id": 7, 
+    "title": "Microsoft Excel", 
+    "users": "19M+" ,
+    "image" :"https://img-c.udemycdn.com/course/750x422/344168_bfef_4.jpg"
+},
+  { 
+    "id": 8, 
+    "title": "Machine Learning", 
+    "users": "9.1M+" ,
+    "image" :"https://static.vecteezy.com/system/resources/previews/008/516/508/non_2x/machine-learning-illustration-concept-vector.jpg"
+}
+]

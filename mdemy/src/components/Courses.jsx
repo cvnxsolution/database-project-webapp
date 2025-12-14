@@ -24,9 +24,6 @@ const Courses = () => {
 
   return (
     <div className="courses-container">
-      <h2>
-        Search results for: <strong>{keyword}</strong>
-      </h2>
       {courses.length > 0 ? (
         <div className="courses-grid">
           {courses.map(course => (
