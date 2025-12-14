@@ -2,6 +2,7 @@ import React from 'react'
 import '../css/Home.css'
 import SkillsSection from './SkillsSection'
 import MobileSearchBar from './MobileSearchBar'
+import Footer from './Footer'
 
 const Home = () => {
   return (
@@ -22,6 +23,8 @@ const Home = () => {
       <MobileSearchBar/>
 
       <SkillsSection/>
+
+      <Footer/>
 
     </section>
 
