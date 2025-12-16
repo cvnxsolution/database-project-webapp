@@ -69,16 +69,6 @@ const Footer = () => {
             </div>
           ))}
         </div>
-
-        <div className='footer-bottom'>
-          <div className='footer-company'>
-            <h1 className='logo'><span>m</span>demy</h1>
-            <span>© 2025 Mdemy,Inc.</span>
-          </div>
-          <span className='footer-cookie'>Cookie settings</span>
-          <span className='footer-language'><FaGlobe/> English</span>
-        </div>
-
     </footer>
   )
 }

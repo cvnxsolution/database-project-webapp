@@ -97,9 +97,7 @@ export const footerItem=[
         data:[
             "About us",
             "Careers",
-            "Contact us",
-            "Blog",
-            "Investors"
+            "Contact us"
         ]
     },
     {
@@ -108,13 +106,7 @@ export const footerItem=[
             "Get the app",
             "Teach on Mdemy",
             "Plans and Pricing",
-            "Affiliate",
-            "Help and Support"
         ]
-    },
-    {
-        title:"Mdemy for Business",
-        data:["Mdemy Business"]
     },
     {
         title:"Legal & Accessibility",
