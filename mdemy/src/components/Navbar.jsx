@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaSearch, FaShoppingCart, FaGlobe } from 'react-icons/fa'
+import { FaSearch, FaShoppingCart} from 'react-icons/fa'
 import { LuChevronUp, LuMenu } from "react-icons/lu";
 import { useNavigate } from "react-router-dom";
 
@@ -45,8 +45,11 @@ const Navbar = () => {
           <a href="#" className='nav-links tech'>Teach on Mdemy</a>
           <FaShoppingCart className='cart-icon'/>
           <button className="login-btn">Log in</button>
-          <button className="signup-btn">Sign up</button>
-          <FaGlobe className='world-icon'/>
+          <button 
+            className="signup-btn"
+          >
+            Sign up
+          </button>
         </div>
 
       </div>

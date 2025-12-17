@@ -6,8 +6,9 @@ body {
 /* NAVBAR */
 .navbar{
   width: 100%;
+  position: sticky; 
   background: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 .navbar-inner{
@@ -17,6 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 16px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
 }
 
 .nav-left{
@@ -157,7 +159,7 @@ body {
   }
 
    .nav-search {
-    max-width: 150px;
+    max-width: 200px;
   }
 }
 
